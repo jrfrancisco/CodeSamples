@@ -1,9 +1,9 @@
-﻿using Microsoft.Practices.Unity;
-using Sabio.Data;
-using Sabio.Web.Classes.Tasks.HangFire;
-using Sabio.Web.Domain;
-using Sabio.Web.Models.Requests;
-using Sabio.Web.Services.Interfaces;
+using Microsoft.Practices.Unity;
+using bringpro.Data;
+using bringpro.Web.Classes.Tasks.HangFire;
+using bringpro.Web.Domain;
+using bringpro.Web.Models.Requests;
+using bringpro.Web.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
-namespace Sabio.Web.Services
+namespace bringpro.Web.Services
 {
     public class UserRegistrationReport : BaseService, IUserRegistrationReport
     {

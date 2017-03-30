@@ -1,4 +1,4 @@
-using Sabio.Web.Exceptions;
+using bringpro.Web.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,7 +10,7 @@ using System.Web;
 using System.Web.Http;
 
 
-namespace Sabio.Web.Services
+namespace bringpro.Web.Services
 {
     public class UtilityService
     {

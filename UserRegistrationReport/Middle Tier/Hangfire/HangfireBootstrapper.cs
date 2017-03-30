@@ -1,4 +1,4 @@
-﻿using Hangfire;
+using Hangfire;
 using Hangfire.Console;
 using Hangfire.SqlServer;
 using System;
@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Configuration;
 using System.Web.Hosting;
 
-namespace Sabio.Web.Classes.Tasks.HangFire
+namespace bringpro.Web.Classes.Tasks.HangFire
 {
     public class HangfireBootstrapper : IRegisteredObject
     {

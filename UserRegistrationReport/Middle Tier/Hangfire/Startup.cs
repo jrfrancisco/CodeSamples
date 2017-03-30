@@ -1,14 +1,14 @@
-﻿using Hangfire;
+using Hangfire;
 using Hangfire.SqlServer;
 using Microsoft.Owin;
 using Owin;
-using Sabio.Web.Classes.Filter.HangFire;
+using bringpro.Web.Classes.Filter.HangFire;
 using System.Web.Configuration;
 
 // ********** FYI: System Generated File
 
-[assembly: OwinStartupAttribute(typeof(Sabio.Web.Startup))]
-namespace Sabio.Web
+[assembly: OwinStartupAttribute(typeof(bringpro.Web.Startup))]
+namespace bringpro.Web
 {
     public partial class Startup
     {

@@ -1,7 +1,7 @@
-﻿using Hangfire;
-using Sabio.Web.Classes.Tasks.HangFire;
-using Sabio.Web.Services;
-using Sabio.Web.Services.Interfaces;
+using Hangfire;
+using bringpro.Web.Classes.Tasks.HangFire;
+using bringpro.Web.Services;
+using bringpro.Web.Services.Interfaces;
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -11,7 +11,7 @@ using Microsoft.Practices.Unity;
 using Hangfire.SqlServer;
 using System.Web.Configuration;
 
-namespace Sabio.Web
+namespace bringpro.Web
 {
     public class MvcApplication : System.Web.HttpApplication 
     {
