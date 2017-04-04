@@ -1,0 +1,36 @@
+<div ng-controller="websiteAdminController as webAdmin">
+    <div class="card container cardBorder">
+        <form class="form-horizontal">
+            <div class="card-body card-padding col-md-4">
+                <div class="form-group fg-line col-md-12">
+                    <div class="select">
+                        <label for="websiteSelect" class="control-label"><strong>Select Website:</strong></label>
+                        <select class="form-control" name="websiteSelect" ng-change="webAdmin.onDropdownSubmit()" id="websiteSelect" ng-model="webAdmin.currentWebsite.slug" ng-options="set.slug as set.name for set in webAdmin.website">
+                        <!--<option value="">Select</option>-->
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br />
+        <div ng-show="webAdmin.currentWebsite.slug">
+            <div class="col-md-3 pull-right">
+                <div>
+                    <div class="col-md-9">
+                        <a>
+                            <img class="img-responsive mCS_img_loaded" id="" ng-src="{{webAdmin.thisWebsite.media.fullUrl}}" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="card cardBorder">
+        <ul class="tab-nav tn-justified" bs-active-link>
+            <li class="waves-effect" ng-class="webAdmin.tabClass(tab)" ng-repeat="tab in webAdmin.websiteAdminTabs">
+                <a href="/backoffice#/website/{{webAdmin.currentWebsite.slug}}/{{tab.label}}" ng-click="webAdmin.setSelectedTab(tab)"><span class="zmdi zmdi-{{tab.icon}}"></span> {{tab.label}}</a>
+            </li>
+        </ul>
+    </div>
+</div>
